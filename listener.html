@@ -1,0 +1,8 @@
+<script>
+  window.addEventListener('message', (event) => {
+    if(event.data === "donationSuccess"){
+      console.log(event);
+      document.cookie = "supportprogramme_thankyou=1; max-age=86400; domain=.stuff.co.nz;path=/;";
+    }
+  });
+</script>
